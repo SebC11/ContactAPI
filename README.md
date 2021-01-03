@@ -1,0 +1,2 @@
+# ContactAPI
+This is a project I made in order to practice my skills developing RESTful API's with Spring. This API allows users (usually me) to get information about contacts stored on the local H2A DB. This API also utilizes caching in order to store the 100 most recent contacts in order to boost performance. This API is built with the REST Styles and technicalities kept in mind and heavily utilizes functional programming to create efficient and concise code. I also am going to be adding authorization and security behind this (OAuth).    
