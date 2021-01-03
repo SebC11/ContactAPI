@@ -7,6 +7,8 @@ import java.util.stream.Collectors;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.hateoas.*;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
+
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -73,5 +75,10 @@ public class ContactController {
 			newContact.setId(id);
 			return assembler.toModel(repo.save(newContact));
 		});
+	}
+	
+	@DeleteMapping("/contact/{id}")
+	void deleteEmployee(@PathVariable Long id) {
+	    repo.deleteById(id);
 	}
 }
