@@ -5,20 +5,20 @@ This API allows users (usually me) to get information about contacts stored on t
 
 Paths
 
-@GETS
+## GET ##
 
 /contacts
 /contacts/{id}
 
-@POST
+### POST ###
 
 /contacts
 
-@PUT
+### PUT ###
 
 /contacts/{id}
 
-@DELETE
+### DELETE ###
 
 /contacts/{id}
 
