@@ -5,7 +5,7 @@ This API allows users (usually me) to get information about contacts stored on t
 
 Paths
 
-## GET ##
+### GET ###
 
 /contacts
 /contacts/{id}
